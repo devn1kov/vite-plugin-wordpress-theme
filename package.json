@@ -1,16 +1,22 @@
 {
-  "name": "vitepress-theme",
+  "name": "vite-plugin-wordpress-theme",
   "version": "0.0.1",
   "main": "./dist/index.js",
   "license": "MIT",
   "type": "module",
   "types": "./dist/index.d.ts",
+  "author": {
+    "name": "Nick Pashkov",
+    "email": "nikita24pashkov@gmail.com"
+  },
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {
-    "node-html-parser": "^7.0.1"
-  },
+  "keywords": [
+    "vite",
+    "wordpress",
+    "headless"
+  ],
   "devDependencies": {
     "@tsconfig/node20": "^20.1.6",
     "@types/node": "^24.0.6",
