@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-wordpress-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./dist/index.js",
   "license": "MIT",
   "type": "module",
@@ -17,6 +17,10 @@
     "wordpress",
     "headless"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devn1kov/vite-plugin-wordpress-theme.git"
+  },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.6",
     "@types/node": "^24.0.6",
