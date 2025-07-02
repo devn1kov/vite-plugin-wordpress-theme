@@ -19,7 +19,7 @@ export const getFunctionsPhp = (assets: string[]) => {
     		'wp-headless-theme-css${i}',
         get_parent_theme_file_uri( '${uri}' ),
         array(),
-        wp_get_theme()->get( 'Version' ),
+        null,
         'all'
       );`,
     )}
@@ -30,7 +30,7 @@ export const getFunctionsPhp = (assets: string[]) => {
        	'wp-headless-theme-js${i}',
        	get_parent_theme_file_uri( '${uri}' ),
        	array(),
-       	wp_get_theme()->get( 'Version' )
+       	null
       );`,
     )}
 

@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { PluginOption } from "vite";
+import type { Plugin } from "vite";
 import { getFunctionsPhp } from "./functions.js";
 
 export type Options = {
@@ -28,7 +28,7 @@ const writeStyleCss = async (path: string) => {
   await fs.writeFile(path, content.trim(), { encoding: "utf8" });
 };
 
-export default (opts: Options = {}): PluginOption => {
+export default (opts: Options = {}): Plugin => {
   const { themeSlug = "headless-vite" } = opts;
   let outDir: string = "";
 

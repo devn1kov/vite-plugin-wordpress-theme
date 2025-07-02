@@ -1,16 +1,23 @@
 {
   "name": "vite-plugin-wordpress-theme",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./dist/index.js",
   "license": "MIT",
   "type": "module",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
   "author": {
     "name": "Nick Pashkov",
     "email": "nikita24pashkov@gmail.com"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "keywords": [
     "vite",
@@ -22,7 +29,6 @@
     "url": "git+https://github.com/devn1kov/vite-plugin-wordpress-theme.git"
   },
   "devDependencies": {
-    "@tsconfig/node20": "^20.1.6",
     "@types/node": "^24.0.6",
     "typescript": "^5.8.3"
   },
